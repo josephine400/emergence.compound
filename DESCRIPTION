@@ -1,0 +1,21 @@
+Package: emergence.compound
+Title: Detect Periods of Emergence of Compound Events and their Drivers (marginals or dependence change) 
+Version: 0.0.0.9000
+Authors@R: 
+    c(person("Josephine", "Schmutz", email = "josephine.schmutz@lsce.ipsl.fr", role = c("aut", "cre")),
+    person("Mathieu", "Vrac", email = "mathieu.vrac@lsce.ipsl.fr",role = c("aut")),
+    person("Bastien","François", email = "bastien.francois@knmi.nl",role=c("aut")))
+Description: Given two times series and a bivariate threshold, the goal is to analyse emergence of compound event probability (the signal). Periods of emergence (PoE) are the moments during which the signal exceeds the natural variability. The probability signal is modelled with copula functions in order to disentangle the different contributions (both marginals and dependence). The package gives the PoE features (like the frequency and the duration) and the contribution of each statistical driver to the signal emergence. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Imports:
+    MASS,
+    VineCopula,
+    copula,
+    evd,
+    ismev

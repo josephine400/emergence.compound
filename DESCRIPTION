@@ -19,3 +19,5 @@ Imports:
     copula,
     evd,
     ismev
+URL: https://github.com/josephine400/emergence.compound
+BugReports: https://github.com/josephine400/emergence.compound/issues

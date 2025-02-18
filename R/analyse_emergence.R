@@ -1,7 +1,7 @@
 #' @title Detect emergence (poe and toe) and quantify the contributions of each statistical component (marginals and dependence)
 #'
 #' @description
-#' Give periods of emergence (PoE) features (e.g., the number of PoEs, their duration). The signal can either emerge below the lower bound of the natural variability (PoE-low) or above the upper bound of the natural variability (PoE-up).
+#' Give periods of emergence (PoE) features (e.g., the number of PoEs, their duration). Compound event (CE) probability signal can either emerge below the lower bound of the natural variability (PoE-low) or above the upper bound of the natural variability (PoE-up).
 #' Give also the values of the statistical drivers associated with PoE-low and PoE-up.
 #'
 #' @param series1 numeric vector.
@@ -10,8 +10,8 @@
 #' @param y_end last year of the whole studied period.
 #' @param length_sliding_window number of years of the sliding window.
 #' @param step_sliding_window number of years separating two sliding windows.
-#' @param threshold1 threshold for series1, used to compute the joint exceedance probability (the probability that variable1 exceeds threshold1 and variable2 exceeds threshold2). Defaults to NaN means that the threshold is associated with the 95th quantile of the series 1 during the reference period.
-#' @param threshold2 threshold for series2, used to compute the joint exceedance probability (the probability that variable1 exceeds threshold1 and variable2 exceeds threshold2).  Defaults to NaN means that the threshold is associated with the 95th quantile of the series 2 during the reference period.
+#' @param threshold1 threshold for series1, used to compute CE probability (the probability that variable1 exceeds threshold1 and variable2 exceeds threshold2). Defaults to NaN means that the threshold is associated with the 95th quantile of the series 1 during the reference period.
+#' @param threshold2 threshold for series2, used to compute CE probability (the probability that variable1 exceeds threshold1 and variable2 exceeds threshold2).  Defaults to NaN means that the threshold is associated with the 95th quantile of the series 2 during the reference period.
 #' @param list_marg1 character vector specifying the names of distribution family to be tested for series1. Defaults to c("normal","GEV","gamma","log-normal",GPD").
 #' @param list_marg2 character vector specifying the names of distribution family to be tested for series2. Defaults to c("normal","GEV","gamma","log-normal",GPD").
 #' @param list_cop character vector specifying the names of copula family to be tested. Defaults to c("Normal","Clayton","Gumbel","Joe","Frank").
